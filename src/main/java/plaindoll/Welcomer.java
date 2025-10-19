@@ -16,5 +16,7 @@ public class Welcomer{
         public String getGreeting() {
         	return "Hello Player!";
         }
-
+	public String getHunterReply() {
+ 		return "I see you, hunter!";
+	}
 }
