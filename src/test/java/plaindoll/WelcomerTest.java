@@ -30,4 +30,16 @@ public class WelcomerTest {
 	public void welcomerSaysSomething(){
 		assertThat(welcomer.saySome(), containsString("something"));
 	}
+	@Test
+    	public void testGetGreeting() {
+        	Welcomer welcomer = new Welcomer();
+        	assertEquals("Hello Player!", welcomer.getGreeting());
+    	}
+
+    	@Test
+    	public void testGetHunterReply() {
+        	Welcomer welcomer = new Welcomer();
+        	String reply = welcomer.getHunterReply();
+        	assertTrue(reply.contains("hunter"));
+    	}
 }
