@@ -17,7 +17,8 @@ public class Welcomer{
         	return "Hello Player!";
         }
 
-        public String getHunterReply() {
-        	return "I see you, hunter!";
-        }
+        @Test
+		public void welcomerSaysHunter() {
+    		assertThat(welcomer.getHunterReply(), containsString("hunter"));
+	}
 }

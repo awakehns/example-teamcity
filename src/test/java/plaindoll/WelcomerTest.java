@@ -42,4 +42,8 @@ public class WelcomerTest {
         	String reply = welcomer.getHunterReply();
         	assertTrue(reply.contains("hunter"));
     	}
+        @Test
+    	public void welcomerSaysHunter() {
+        	assertThat(welcomer.getHunterReply(), containsString("hunter"));
+    	}
 }
